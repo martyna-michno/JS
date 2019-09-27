@@ -1,6 +1,9 @@
-var a = 7;
+var a = "hello";
 var b = 5;
 
-console.log(a + b);
+//double negative
+if (!isNaN(a)){
 
-console.log(Math.PI)
+    console.log("meaning of like is " + (a + b));
+
+}
