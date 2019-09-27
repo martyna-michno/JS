@@ -1,18 +1,11 @@
-
-var myString = 'I\'m a "fun" string';
-
-
-console.log(myString.length);
-
-console.log(myString.toUpperCase());
-
-console.log(myString.indexOf("string"));
-
-var string1 = "abc";
-var string2 = "ABC";
-
-console.log(string1.toLowerCase() === string2.toLowerCase());
+var str = "hello, world";
  
-console.log(string1 < string2)
+var str2 = str.slice(2,9);
 
-//b jest wyzej niz a, ale A wieksze niz B
+var str3 = str.slice (2);
+
+
+var tags = "ham, meat, chicken, pork, beef, lamb";
+
+var tagsArray = tags.split(",");
+
