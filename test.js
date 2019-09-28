@@ -1,12 +1,7 @@
-var newLi = document.createElement("li");
+var parent = document.getElementById("id").getElementsByTagName("ul")[0];
 
-varnewA = document.createElement("a");
+var child = parent.getElementsByTagName("li")[0]";
 
-var menu = document.getElementById("id").getElementsByTagName("ul")[0];
+var removed = parent.removeChild(child);
 
-// teraz dodawanie do menu tego co stworzylismy
-
-menu.appendChild(newLi);
-newLi.appendChild(newA);
-newA.innerHTML = "nowy tekst jaki wstawiam pomiedzy a";
-menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
+parent.appendChild(removed);
