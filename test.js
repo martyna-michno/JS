@@ -1,8 +1,31 @@
-var myCar = new Car()
-var myString = new String()
+var myArray = new Array();
 
-myString = "hello"
-myString.length //nie ma nawiasow bo to jest cecha, a nie funkcja
-myString.toUpperCase() //to funkcja - sa nawiasy na koncu
+myArray[0] = 8;
+myArray[1] = "hello";
 
-var myString2 = "hi there";
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Jagoda";
+
+
+
+myCar.drive = function () {
+
+    console.log("now driving");
+};
+
+myCar.drive();
+
+var myArray2 = [true, 15, "hi"] //to jest dla Array
+
+var myCar2 = {
+    maxSpeed: 70, 
+    driver: "Martyna",
+    drive: function(speed, time){
+
+        console.log(speed * time);
+    }
+};
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
