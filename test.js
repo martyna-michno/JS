@@ -2,7 +2,7 @@
 
 
 
-var myCar2 = {
+var myCar = {
     maxSpeed: 70, 
     driver: "Martyna",
     drive: function(speed, time){
@@ -10,33 +10,36 @@ var myCar2 = {
         console.log(speed * time);
     },
 
-    test: function(){
 
-        console.log(this);
-
-        
-    },
     logDriver: function(){
 
         console.log("driver name is " + this.driver);
     }
 };
-var myCar3 = {
-    maxSpeed: 80, 
-    driver: "Jagoda",
-    drive: function(speed, time){
 
-        console.log(speed * time);
-    },
+var myArray = new Array();
+var myString = new String();
 
-    test: function(){
 
-        console.log(this);
-    }
+var Car = function(maxSpeed, driver){
+
+this.maxSpeed = maxSpeed;
+this.driver = driver;
+this.drive = function(speed, time){
+
+    console.log(speed * time);
+};
+this.logDriver = function(){
+
+    console.log("driver name is " + this.driver);
 };
 
-myCar2.logDriver();
-myCar2.test();
-myCar3.test();
-console.log(myCar2.maxSpeed);
-myCar2.drive(50, 3);
+} //;? czemu nie ma?
+
+var myCar = new Car(70, "Martyna");
+var myCar2 = new Car(90, "Jagoda");
+var myCar3 = new Car(40, "Karolina");
+var myCar4 = new Car(20, "Asia");
+
+myCar.drive(20, 4);
+myCar3.logDriver();
