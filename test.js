@@ -1,12 +1,12 @@
- document.getElementsByClassName("content");
- /* wpisuje nazwe klas i w konsoli klikam i widze liczbe elementow*/
- var myContentDivs = document.getElementsByClassName("content");
+var newLi = document.createElement("li");
 
- myContentDivs
+varnewA = document.createElement("a");
 
- //wyswietlaja sie znow
+var menu = document.getElementById("id").getElementsByTagName("ul")[0];
 
+// teraz dodawanie do menu tego co stworzylismy
 
- var myH2 = myContentDivs[1].getElementsByTagName ("h2");
-
- myH2[0].innerHTML = "HEJKA";
+menu.appendChild(newLi);
+newLi.appendChild(newA);
+newA.innerHTML = "nowy tekst jaki wstawiam pomiedzy a";
+menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
