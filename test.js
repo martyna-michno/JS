@@ -1,7 +1,13 @@
-var parent = document.getElementById("id").getElementsByTagName("ul")[0];
+var title = document.getElementById("id");
 
-var child = parent.getElementsByTagName("li")[0]";
+title.onclick = function(){
 
-var removed = parent.removeChild(child);
+alert("you clicked me");
 
-parent.appendChild(removed);
+};
+
+title.onmouseover = function(){
+
+alert("you hovered your mouse over me ;)");
+
+};
